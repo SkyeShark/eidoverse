@@ -50,15 +50,6 @@ A frame generator on a timer is not the goal. Eidoverse gives an agent a
 | Audio | generative music + TTS narration, mixed to the render length |
 | Output | H.264 `.mp4` with muxed audio |
 
-## Design principles
-
-- **Constraints over exhortation.** Quality is enforced by automated audits
-  that demand a re-render, not by documentation asking nicely.
-- **Helpers own the hard logic.** Locomotion, placement, and material setup
-  live in reusable tools — scenes are thin harnesses that call into them.
-- **Source, don't just fabricate.** A real fetched asset beats a primitive; a real
-  texture beats a flat color.
-
 ---
 
 > Staging repository. Framework source not yet published here.
