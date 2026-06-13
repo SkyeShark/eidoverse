@@ -7,10 +7,11 @@ direct an animated film end to end — source the world, stage it, animate
 the characters, score it, render it, and ship a finished `.mp4` — without a
 human in the loop for any individual frame. It can also be used with HIL feedback!
 
-It is **GPU-only and NodeMaterial-only**: Deno + WebGPU + three.js + TSL
+It is **GPU and NodeMaterial**: Deno + WebGPU + three.js + TSL
 (Three Shading Language), with Rapier physics, VRM characters, and a library
 of GPU showpiece effects. Agents write a scene as a small script against a set
-of installed globals; the renderer turns it into video.
+of installed globals; the renderer turns it into video. Due to limitations in Deno,
+some CPU overhead is required for loading textures.
 
 ---
 
